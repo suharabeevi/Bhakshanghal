@@ -26,9 +26,31 @@ const CreateAuthServices =()=>{
 throw error
         }
     }
+
+    const userlogin = async(email,password)=>{
+      try{
+       const user = await UserModel.findOne({email})
+       if(!user){
+        throw new Error("User not found");
+       }
+       const passwordMatch = await Bcrypt.compare(password, user.password);
+       if (!passwordMatch) {
+         throw new Error("Invalid password");
+       }
+
+ const token = user.generateAuthToken()
+      return { token, user };
+
+        }catch(error){
+throw error
+        }  
+    }
+
+
     return{
-        userSignup
+        userSignup,
+        userlogin
     }
 
 }
-export default CreateAuthServices
+module.exports= CreateAuthServices

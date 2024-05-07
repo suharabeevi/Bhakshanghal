@@ -1,14 +1,11 @@
-const CreateAuthServices = require('../services/userAuthServices')
-const authService = CreateAuthServices();
 
-export const UserSignupController = async(req,res)=>{
-    try{
-const {username,email,password} = req.body
-const Newuser= await authService.userSignup(username,email,password)
-res.status(201).json({ message: "User signup successful", user: Newuser });
+const express = require('express')
+const UserController = require('../Controller/User/UserController')
 
-    }catch(error){
-    console.error(error);
-    res.status(400).json({error:error.message})
-    }
-}
+const router = express.Router()
+
+router.post("/signup",UserController.UserSignupController)
+router.post("/signin",UserController.UserloginController)
+
+
+module.exports = router

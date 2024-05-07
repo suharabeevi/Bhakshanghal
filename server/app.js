@@ -4,6 +4,7 @@ require('dotenv').config();
 const morgan =require('morgan')
 const cors = require('cors')
 const DbConnection = require('./DBconnection')
+const userRoutes = require('./routes/UserRoutes')
 
 //middleware
 app.use(express.json())
@@ -12,6 +13,9 @@ app.use(morgan("dev"))
 
 //database connnetion
 DbConnection()
+
+app.use('/api/user',userRoutes)
+
 
 const Port = process.env.PORT || 8000
 app.listen(Port,()=>{
