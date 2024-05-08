@@ -6,8 +6,6 @@ function App() {
 <Router>
   <Routes>
   <Route path="/*" exact element={<UserLoginPage/>}/>
-
-  
   </Routes>
 </Router>
     </div>

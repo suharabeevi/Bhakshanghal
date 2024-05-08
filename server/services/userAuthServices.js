@@ -2,7 +2,6 @@ const UserModel = require('../Models/UserModel')
 const Bcrypt = require('bcrypt')
 
 const CreateAuthServices =()=>{
- 
     const SALT_ROUND= 10
 
     const userSignup = async(username,email,password)=>{
@@ -26,7 +25,6 @@ const CreateAuthServices =()=>{
 throw error
         }
     }
-
     const userlogin = async(email,password)=>{
       try{
        const user = await UserModel.findOne({email})
@@ -45,12 +43,38 @@ throw error
 throw error
         }  
     }
+    const googleLogin = async(userdata)=>{
+        try{
+    const {given_name,picture,email} = userdata
+    const user = await UserModel.findOne({email})
+    if(!user){
+        const newUser = await UserModel.create({
+          username : given_name,
+          email : email,
+          isBlocked : false,
+          profileImage : picture,
+        })
+        console.log(newUser,"newuser");
+        const token = newUser.generateAuthToken();
+        console.log('token')
+        return { token, user: newUser };
+    }
+    console.log('old user')
+
+    const token = user.generateAuthToken();
+    // console.log(token);
+        return { token, user: user };
+        
+        }catch(error){
+throw error
+        }
+    }
 
 
     return{
         userSignup,
-        userlogin
+        userlogin,
+        googleLogin
     }
-
 }
 module.exports= CreateAuthServices

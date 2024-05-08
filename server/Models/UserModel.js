@@ -12,11 +12,11 @@ const UserSchema = new mongoose.Schema({
         type: String
     },
     password: {
-        required: true,
         type: String,
-    }
+    },
+    profileImage:
+     { type: String },
 });
-
 UserSchema.methods.generateAuthToken = function () {
     try {
         const token = jwt.sign({ _id: this._id }, process.env.JWT_KEY, {
