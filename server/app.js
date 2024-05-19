@@ -11,7 +11,6 @@ app.use(express.json())
 app.use(cors({origin:"*"}))
 app.use(morgan("dev"))
 
-//database connnetion
 DbConnection()
 
 app.use('/api/user',userRoutes)
