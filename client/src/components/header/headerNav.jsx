@@ -16,18 +16,21 @@ function HeaderNav() {
 
       </span>
     <div class="ms-5 flex w-[30%] items-center justify-between"> 
-    <button
-          type="button"
-          data-twe-ripple-init
-          data-twe-ripple-color="light"
-          class="me-3 inline-block rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-secondary-600 dark:hover:text-secondary-500 dark:focus:text-secondary-500 dark:active:text-secondary-500">
-          Login
-        </button>
-    <p>Signup</p>
+    <ul class="flex">
+  
+  <li class="mr-6">
+    <button class=" pl-10 text-blue-500 hover:text-blue-800 " href="#">Link</button>
+  </li>
+  
+  <li class="mr-6">
+    <button class="text-blue-500 hover:text-blue-800" href="#">Disabled</button>
+  </li>
+</ul>
+    </div>
 
       <input
         type="search"
-        class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+        class=" relative m-0 block min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-1 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
         placeholder="Search"
         aria-label="Search"
         aria-describedby="button-addon2" />
@@ -47,7 +50,7 @@ function HeaderNav() {
         </svg>
       </span>
     </div>
-  </div>
+  
 </nav>
 
 
