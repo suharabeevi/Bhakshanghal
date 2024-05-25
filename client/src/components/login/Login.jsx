@@ -1,5 +1,5 @@
 // export default Login
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Ripple, Input, initTWE } from "tw-elements";
 import GoogleAuthcomponent from './GoogleAuthcomponent';
 // Initialize TWE

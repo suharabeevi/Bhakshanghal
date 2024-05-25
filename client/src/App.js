@@ -1,6 +1,8 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import UserLoginPage from "./Pages/user/UserLoginPage";
 import UserRegister from "./Pages/user/UserRegister";
+import Home from "./Pages/Home/Home";
+
 function App() {
   return (
     <div >
@@ -8,6 +10,7 @@ function App() {
   <Routes>
   <Route path="/*" exact element={<UserLoginPage/>}/>
   <Route path="/register*" exact element={<UserRegister/>}/>
+  <Route path="/home*" exact element={<Home/>}/>
 
   </Routes>
 </Router>
