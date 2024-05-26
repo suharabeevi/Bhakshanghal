@@ -12,13 +12,14 @@ initTWE({ Dropdown, Ripple });
 
 function HeaderNav() {
   return (
-    <div>
+    <div className="sticky top-0 z-50 bg-white w-full">
       <header>
-        <div className='bg-black w-full h-5 font-normal text-end text-white'>
+        <div className="bg-black w-full h-5 font-normal text-end text-white">
           English
-        </div>
+          </div>
 
-        <nav className="relative h-24 flex w-full flex-wrap items-center justify-between shadow-dark-mild dark:bg-neutral-700">
+
+          <nav className="relative h-24 flex w-full flex-wrap items-center justify-between shadow-dark-mild dark:bg-neutral-700">
           <img
             src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711122599/64480603-8980-4278-bb9a-5b2ffdb5925e_1711116791789477156_hlyhro.png"
             alt=""
@@ -34,7 +35,7 @@ function HeaderNav() {
             />
              <div class="relative" data-twe-dropdown-ref>
   <button
-    class="ml-96 rounded bg-red-600 p-3 text-xsfont-medium uppercase leading-normal w-40 text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-red-400 hover:shadow-red-400 focus:bg-red-600 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-red-500 active:shadow-red-500 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+    class="ml-96 rounded 	 bg-red-600 p-3 text-xsfont-medium uppercase leading-normal w-40 text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-red-400 hover:shadow-red-400 focus:bg-red-600 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-red-500 active:shadow-red-500 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
     type="button"
     id="dropdownMenuButton1"
     data-twe-dropdown-toggle-ref

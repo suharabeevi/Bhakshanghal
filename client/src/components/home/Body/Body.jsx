@@ -36,9 +36,10 @@ const HomePage = () => {
          className='w-full'
          
         />
-        <div>
-          
-  <h1 className='font-medium	 text-xl ml-10 mt-5 text-red-600 '> Today's</h1>
+        <div className='flex'>
+        <span className='bg-red-600 w-6 ml-11  mt-3 rounded-lg cursor-pointer'></span>
+
+  <h1 className='font-medium	 text-xl ml-5 mt-5 text-red-600 '> Today's</h1>
 </div>
 <div>
   <h1 className='font-medium		 text-5xl ml-10 mt-5'>Flash Sales</h1>
@@ -105,7 +106,7 @@ Added to cart
 </div>
   </div>
   <div class="flex justify-center mt-5">
-   <button class="bg-red-600 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-400 hover:border-red-400 rounded-md">
+   <button class="bg-red-600 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4  border-red-400 hover:border-red-400 rounded-md">
        View Products
    </button>
 
@@ -113,9 +114,9 @@ Added to cart
 </div>
 <hr
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
-   <div>
-          
-          <h1 className='font-medium	 text-xl ml-10 mt-5 text-red-600 '> This Month</h1>
+   <div className='flex'>
+          <span className='bg-red-600 w-6 ml-11 rounded-lg cursor-pointer'></span>
+          <h1 className='font-medium	 text-xl ml-5 mt-5 text-red-600 '> This Month</h1>
         </div>
         <div>
           <h1 className='font-medium		 text-5xl ml-10 mt-5'>best selling products</h1>
