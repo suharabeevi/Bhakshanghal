@@ -8,8 +8,9 @@ function App() {
     <div >
 <Router>
   <Routes>
-  <Route path="/*" exact element={<UserLoginPage/>}/>
-  <Route path="/register*" exact element={<UserRegister/>}/>
+  <Route path="/*" exact element={<Home/>}/>
+  <Route path="/register*" exact element={<UserLoginPage/>}/>
+  <Route path="/login*" exact element={<UserRegister/>}/>
   <Route path="/home*" exact element={<Home/>}/>
 
   </Routes>

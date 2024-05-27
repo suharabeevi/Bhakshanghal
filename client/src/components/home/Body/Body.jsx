@@ -2,11 +2,11 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHeart} from '@fortawesome/free-solid-svg-icons'
-
+import GridCard from './card';
 const HomePage = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Array of image URLs
+  
   // const images = [
   //   "https://res.cloudinary.com/dpgbodkae/image/upload/v1711387978/samosa_1_qpbq5i.png",
   //   "https://b.zmtcdn.com/data/o2_assets/69963815381d03505031ca97cc396b871687856789.png",
@@ -47,7 +47,7 @@ const HomePage = () => {
 
       <div className='flex'>
 <div
-  class="max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
+  class="  hover:bg-red-200 max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
   <div class="relative overflow-hidden bg-cover bg-no-repeat ">
   <FontAwesomeIcon icon={faHeart} className='cursor-pointer ml-3' />    
     <img
@@ -67,7 +67,7 @@ const HomePage = () => {
 </div>
 
 <div
-  class="max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
+  class="max-w-[18rem] hover:bg-red-200   rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
   <div class="relative overflow-hidden bg-cover bg-no-repeat ">
   <FontAwesomeIcon icon={faHeart} className='cursor-pointer ml-3' />    
     <img
@@ -86,11 +86,11 @@ const HomePage = () => {
 </button>  </div>
 </div>
 <div
-  class="max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
+  class="max-w-[18rem]  hover:bg-red-200 rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white mt-16 ml-10 w-96">
   <div class="relative overflow-hidden bg-cover bg-no-repeat ">
   <FontAwesomeIcon icon={faHeart} className='cursor-pointer ml-3' />    
     <img
-      class="align-top ml-10"
+      class="align-top ml-10 "
       
       src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389870/g92-2-500x500_1_jddkpi.png"
       alt="" />
@@ -101,7 +101,8 @@ const HomePage = () => {
   <div class="p-6">
   <button class="bg-black hover:bg-black text-white font-bold py-2 px-4 mt-9 w-full  hover:opacity-75 ">
 Added to cart
-</button>  </div>
+</button> 
+ </div>
 </div>
 </div>
   </div>
@@ -121,7 +122,91 @@ Added to cart
         <div>
           <h1 className='font-medium		 text-5xl ml-10 mt-5'>best selling products</h1>
         </div>
-   
+
+        <div className='overflow-x-hidden'>
+        <div class="flex flex-wrap -mx-6 ml-10 mt-6">
+    <div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">
+        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+        Pure Veg
+    </div>
+    <div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Salt
+</div>
+    <div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Non-Veg
+</div>  
+    <div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+</div>
+</div>
+</div>
+
+<div>
+  <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711388169/Frame_600_aqxxff.png" alt="" className='m-10 content-center'/>
+</div>
+<div className='flex'>
+          <span className='bg-red-600 w-6 ml-11 rounded-lg cursor-pointer'></span>
+          <h1 className='font-medium	 text-xl ml-5 mt-5 text-red-600 '> Featured</h1>
+        </div>
+        <div>
+          <h1 className='font-medium		 text-5xl ml-10 mt-5'>New Arrivals</h1>
+        </div>
+
+        {/* photo collage */}
+        {/* <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+  <div class="-m-1 flex flex-wrap md:-m-2">
+    <div class="flex w-1/2 flex-wrap">
+      <div class="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+      </div>
+      <div class="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
+      </div>
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+      </div>
+    </div>
+    <div class="flex w-1/2 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+      </div>
+      <div class="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+      </div>
+      <div class="w-1/2 p-1 md:p-2">
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" />
+      </div>
+    </div>
+  </div>
+</div> */}
+<GridCard/>
+
+
     </>
   )
 }
