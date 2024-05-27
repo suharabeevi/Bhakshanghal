@@ -131,7 +131,28 @@ Added to cart
         <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
         Pure Veg
     </div>
+    
     <div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Salt
+</div>
+<div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Salt
+</div>
+<div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Salt
+</div>
+<div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
+
+">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
+    Salt
+</div>
+<div class="box-content m-6 h-30 w-30 p-4 border-4 hover:bg-red-600 cursor-pointer rounded-lg
 
 ">        <img src="https://res.cloudinary.com/dpgbodkae/image/upload/v1711389869/Rectangle_26_dme6yd.png" alt="" class='rounded-full'/>
     Salt
