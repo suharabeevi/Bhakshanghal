@@ -17,6 +17,7 @@ const UserSchema = new mongoose.Schema({
     profileImage:
      { type: String },
 });
+
 UserSchema.methods.generateAuthToken = function () {
     try {
         const token = jwt.sign({ _id: this._id }, process.env.JWT_KEY, {

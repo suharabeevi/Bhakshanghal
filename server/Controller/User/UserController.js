@@ -38,7 +38,8 @@ module.exports={
         
       const payload = ticket.getPayload()
       const userid = payload['sub'];
-console.log(payload,"payload");
+
+
     const {token,user} = await authService.googleLogin(payload)
     res.status(200).json({ message: "User login successful", token, user });
         }catch(error){
@@ -46,7 +47,6 @@ console.log(payload,"payload");
     res.status(400).json({error:error.message}) 
         }
     }
-    
 }
  
 

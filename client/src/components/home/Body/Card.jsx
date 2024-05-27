@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faTruck} from '@fortawesome/free-solid-svg-icons'
 function GridCard() {
   return (
     
@@ -32,22 +33,22 @@ function GridCard() {
   
   <div class="flex items-center justify-center mt-20 ">
   <div class="flex flex-wrap gap-64">
-    <div className='bg-slate-400  rounded-full p-3'>
-    <div class="bg-black border-2 rounded-full p-7 ">
-      
-    </div>
+    <div className='bg-slate-400  rounded-full p-2'>
+    <div class="bg-black  rounded-full p-3 ">
+    <FontAwesomeIcon icon={faTruck} size="xl" style={{color: "#fcfcfc",}} />   </div>
 
     </div>
     
-    <div className='bg-slate-400  rounded-full p-3'>
+    <div className='bg-slate-400  rounded-full p-2'>
 
-    <div class="bg-black border-2 rounded-full p-7 ">
-      
+    <div class="bg-black  rounded-full p-3 ">
+    <FontAwesomeIcon icon={faTruck} size="xl" style={{color: "#fcfcfc",}} />
     </div>
     </div>
-    <div className='bg-slate-400  rounded-full p-3'>
+    <div className='bg-slate-400  rounded-full p-2'>
 
-    <div class="bg-black border-2 rounded-full p-7">
+    <div class="bg-black  rounded-full p-3">
+    <FontAwesomeIcon icon={faTruck} size="xl" style={{color: "#fcfcfc",}} />
       
     </div>
     </div>
@@ -55,13 +56,28 @@ function GridCard() {
 
 
 </div>
-<div className='flex items-center justify-center mb-40 '>
+<div className='flex items-center justify-center  '>
   <div className='flex flex-wrap gap-36'>
-<h1 className='font-bold'>FREE AND FAST DELIVERY</h1>
+<h1 className='font-bold'>FREE AND FAST DELIVERY
+</h1>
+
 <h1 className='font-bold'>FREE AND FAST DELIVERY</h1>
 <h1 className='font-bold'>FREE AND FAST DELIVERY</h1>
 </div>
+
+
 </div>
+<div className='flex items-center justify-center  '>
+  <div className='flex flex-wrap gap-28'>
+<h1 className='font-light	'>Free devilvery for all orders
+</h1>
+
+<h1 className='font-light	'>Friendly customer survices</h1>
+<h1 className='font-light	'>we return money within 30 days</h1>
+</div>
+</div>
+
+
 
 
 </>
