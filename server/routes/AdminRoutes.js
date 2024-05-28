@@ -11,4 +11,5 @@ router.post('/adminLogin',AdminController.adminLogin)
 
 
 router.post('/AddCategory',ProductController.AddCategory)
+router.delete('/deleteCategory/:categoryid',ProductController.DeleteCategory)
 module.exports = router
